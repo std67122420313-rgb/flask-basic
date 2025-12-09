@@ -27,23 +27,23 @@ def name():
 def user(username):
    return f'<h1>My name is {username}</h1>'
 
-@app.routes('/calculator/addition/<int:a>/<int:b>')
+@app.route('/calculator/addition/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} + {b} = {a+b}</h1>'
 
-@app.routes('/calculator/Subtraction/<int:a>/<int:b>')
+@app.route('/calculator/Subtraction/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} - {b} = {a-b}</h1>'
 
-@app.routes('/calculator/Multiplication/<int:a>/<int:b>')
+@app.route('/calculator/Multiplication/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} * {b} = {a*b}</h1>'
 
-@app.routes('/calculator/Division/<int:a>/<int:b>')
+@app.route('/calculator/Division/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} / {b} = {a/b}</h1>'
    
-@app.routes('/secretkey/<uuid:sk>')
+@app.route('/secretkey/<uuid:sk>')
 def my_secret_key(sk):
    return f'<h1> My secret Key: {sk}<h1>'
 
