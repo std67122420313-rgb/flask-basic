@@ -31,15 +31,15 @@ def user(username):
 def addition(a, b):
    return f'<h1>{a} + {b} = {a+b}</h1>'
 
-@app.routes('/calculator/addition/<int:a>/<int:b>')
+@app.routes('/calculator/Subtraction/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} - {b} = {a-b}</h1>'
 
-@app.routes('/calculator/addition/<int:a>/<int:b>')
+@app.routes('/calculator/Multiplication/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} * {b} = {a*b}</h1>'
 
-@app.routes('/calculator/addition/<int:a>/<int:b>')
+@app.routes('/calculator/Division/<int:a>/<int:b>')
 def addition(a, b):
    return f'<h1>{a} / {b} = {a/b}</h1>'
    
