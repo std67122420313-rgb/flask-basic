@@ -32,15 +32,15 @@ def addition(a, b):
    return f'<h1>{a} + {b} = {a+b}</h1>'
 
 @app.route('/calculator/Subtraction/<int:a>/<int:b>')
-def addition(a, b):
+def subtraction(a, b):
    return f'<h1>{a} - {b} = {a-b}</h1>'
 
 @app.route('/calculator/Multiplication/<int:a>/<int:b>')
-def addition(a, b):
+def multiply(a, b):
    return f'<h1>{a} * {b} = {a*b}</h1>'
 
 @app.route('/calculator/Division/<int:a>/<int:b>')
-def addition(a, b):
+def divide(a, b):
    return f'<h1>{a} / {b} = {a/b}</h1>'
    
 @app.route('/secretkey/<uuid:sk>')
